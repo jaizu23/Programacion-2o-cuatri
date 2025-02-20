@@ -30,14 +30,14 @@ def test_comprobar_perfecto_1000(benchmark):
     resultado = benchmark(esPerfecto,1000)
     assert resultado == False
 
-def test_casos_limite_1():
+def test_6_casos_limite_1():
     resultado = esPerfecto(-6)
     assert resultado == False
 
-def test_casos_limite_2():
+def test_6_casos_limite_2():
     resultado = esPerfecto(0)
     assert resultado == True
 
-def test_casos_limite_3():
+def test_6_casos_limite_3():
     resultado = esPerfecto(6)
     assert resultado == True

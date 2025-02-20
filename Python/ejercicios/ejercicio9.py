@@ -18,14 +18,14 @@ def test_comprobar_sumatorio_2000(benchmark):
     resultado = benchmark(sumatorio,2000)
     assert resultado == 2001000
 
-def test_casos_limite_1():
+def test_9_casos_limite_1():
     resultado = sumatorio(-6)
     assert resultado == -1
 
-def test_casos_limite_2():
+def test_9_casos_limite_2():
     resultado = sumatorio(0)
     assert resultado == 0
 
-def test_casos_limite_3():
+def test_9_casos_limite_3():
     resultado = sumatorio(6)
     assert resultado == 21
