@@ -96,6 +96,6 @@ def calcularPesoArbol(aristas:list, nodos: list) -> int:
 ##############################
 
 
-def test_calcular_peso_minimo(benchmark):
+def test_calcular_peso_minimo (benchmark):
     resultado = benchmark(calcularPesoArbol, aristas, ciudades)
-    assert resultado == 2 
+    assert resultado == 2
