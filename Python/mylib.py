@@ -3,13 +3,8 @@
 ##############################
 #        BIBLIOTECA          #
 ##############################
-from typing import TextIO
-
-
-def contar_lineas(fichero :TextIO) -> int:
-    """
-        Cuenta cuantas líneas tiene el fichero pasado como argumento
-    """
+def contar_lineas(fichero :list) -> int:
+    """ Cuenta cuantas líneas tiene el fichero pasado como argumento """
     contador = 0
     for _línea in fichero:
         contador = contador + 1
@@ -17,10 +12,8 @@ def contar_lineas(fichero :TextIO) -> int:
 
 
 def contar_caracteres(cadena :str) -> int:
-    """
-        Cuenta cuantos carácteres tiene la cadena.
-    """
-    def _contar(s, n): # El worker trabaja (la función no es accesible desde fuera)
+    """ Cuenta cuantos carácteres tiene la cadena """
+    def _contar(s :str, n :int) -> int: # El worker trabaja (la función no es accesible desde fuera)
         if not s:
             return n
         else:
@@ -34,7 +27,7 @@ def contar_caracteres(cadena :str) -> int:
 #          TESTS             #
 ##############################
 # Pytest ejecuta las funciones que empiezan por test_
-def tesst_contar_caracteres():
+def test_contar_caracteres():
     nombres    = ['Ángel', 'Pepe', 'angel', 'josé']
     valores    = [5, 4, 5, 4]
     resultados = [] # Almacena los valores que devuelve contar_caracteres con cada nombre
@@ -42,17 +35,19 @@ def tesst_contar_caracteres():
         resultados += [contar_caracteres(nombre)]
     assert resultados == valores, 'Todos los valores coinciden' # Comprueba que coinciden todos los valores
 
-def tesst_benchmark_contar_caracteres_10(benchmark):
-    cadena = '_' * 10 # Genera una cadena de longitud 10
-    resultado = benchmark(contar_caracteres, cadena) # Mide el tiempo que tarda contar_caracteres
-    assert resultado == len(cadena) # Comprueba que el resultado de la función es correcto
+def test_benchmark_contar_caracteres():
+    import timer
+    import sys
+    sys.setrecursionlimit(10**6)
 
-def tesst_benchmark_contar_caracteres_100(benchmark):
-    cadena = '_' * 100
-    resultado = benchmark(contar_caracteres, cadena)
-    assert resultado == len(cadena)
-
-def tesst_benchmark_contar_caracteres_500(benchmark):
-    cadena = '_' * 500
-    resultado = benchmark(contar_caracteres, cadena)
-    assert resultado == len(cadena)
+    @timer.benchmark # Usa el decorador de la biblioteca timer
+    def _timer_contar_caracteres(cadena :str) -> tuple: # (resultado, tiempo)
+        return contar_caracteres(cadena)
+    
+    timer.warmup()
+    print()
+    for n in range(1000, 10001, 1000):
+        cadena = '_' * n # Genera una cadena de longitud n
+        resultado = _timer_contar_caracteres(cadena) # Devuelve la tupla (resultado, tiempo)
+        assert resultado[timer.RESULT] == len(cadena), 'La longitud es correcta' # Comprueba el resultado de la función
+        print(f'Elapsed time ({n}): {resultado[timer.TIME]:.3f} ms') # Muestra el tiempo por pantalla
