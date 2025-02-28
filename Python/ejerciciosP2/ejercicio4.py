@@ -1,3 +1,5 @@
+
+
 """
 En un país, hay varias ciudades que necesitan estar conectadas mediante una red
 de fibra óptica para mejorar las comunicaciones. Cada tramo de fibra óptica entre
@@ -78,10 +80,21 @@ aristas.append(("Barcelona", "Vitoria", 6000))
 aristas.append(("Vitoria", "Madrid", 16000))
 aristas.append(("Madrid", "Cádiz", 19000))
 
+def calcularPesoArbol(aristas:list, nodos: list) -> int:
+    arbol_expansion_minima = kruskal(aristas, nodos)
+    peso_total= 0
+    for arista in arbol_expansion_minima:
+        print(arista)
+        peso_total+=arista[2]
+    return ("coste total de la instalación: ", peso_total)
 
-arbol_expansion_minima = kruskal(aristas, ciudades)
-peso_total= 0
-for arista in arbol_expansion_minima:
-    print(arista)
-    peso_total+=arista[2]
-print("coste total de la instalación: ", peso_total)
+
+
+##############################
+#          TESTS             #
+##############################
+
+
+def test_calcular_peso_minimo(benchmark):
+    resultado = benchmark(calcularPesoArbol, aristas, ciudades)
+    assert resultado == 2
