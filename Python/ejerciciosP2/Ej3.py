@@ -72,6 +72,7 @@ def test_benchmark_contar_caracteres():
     import timer
     import random
 
+
     @timer.benchmark # Usa el decorador de la biblioteca timer
     def _timer_contar_caracteres(valores :list) -> tuple: # (resultado, tiempo)
         return maximo_minimo(valores)
