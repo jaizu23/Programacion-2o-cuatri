@@ -1,3 +1,5 @@
+import random 
+
 V = [666666,3,4,77,1,2,3,6,7,85,4,-45,1,2,8,99,45,129,1062,6394,1,24,5,39]
 
 def maximo_minimo (V: list[int]) -> tuple[int,int]:
@@ -52,4 +54,11 @@ def maximo_minimo (V: list[int]) -> tuple[int,int]:
 
 print(maximo_minimo(V))
 
+def test_caso_limite_1000000(benchmark):
+    def rango_aleatorios(min, max, ranMin, ranMax):
+        i = min
+        while i < max:
+            yield random.randInt(ranMin, ranMax)
+            i += 1
 
+    
