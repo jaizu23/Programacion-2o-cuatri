@@ -61,4 +61,35 @@ def test_caso_limite_1000000(benchmark):
             yield random.randInt(ranMin, ranMax)
             i += 1
 
+
+
+##############################
+#          TESTS             #
+##############################
+
+
+def test_maximo_minimo():
+    numeros    = [666666,3,4,77,1,2,3,6,7,85,4,-45,1,2,8,99,45,129,1062,6394,1,24,5,39]
+    valores    = [666666, -45]
+    resultados = [] # Almacena los valores que devuelve contar_caracteres con cada nombre
+    for valor in numeros:
+        resultados += [maximo_minimo(numeros)]
+    assert resultados == valores, 'Todos los valores coinciden' # Comprueba que coinciden todos los valores
+
+def test_benchmark_contar_caracteres():
+    import timer
+    import random
+
+
+    @timer.benchmark # Usa el decorador de la biblioteca timer
+    def _timer_contar_caracteres(valores :list) -> tuple: # (resultado, tiempo)
+        return maximo_minimo(valores)
     
+    timer.warmup()
+    print()
+    for n in range(1000, 10001, 1000):
+        valores = []
+        resultado = _timer_contar_caracteres(cadena) # Devuelve la tupla (resultado, tiempo)
+        assert resultado[timer.RESULT] == len(cadena), 'La longitud es correcta' # Comprueba el resultado de la función
+        print(f'Elapsed time ({n}): {resultado[timer.TIME]:.3f} ms') # Muestra el tiempo por pantalla
+
