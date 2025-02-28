@@ -1,4 +1,5 @@
-
+import pytest
+import pytest_benchmark
 
 """
 En un país, hay varias ciudades que necesitan estar conectadas mediante una red
@@ -86,15 +87,15 @@ def calcularPesoArbol(aristas:list, nodos: list) -> int:
     for arista in arbol_expansion_minima:
         print(arista)
         peso_total+=arista[2]
-    return ("coste total de la instalación: ", peso_total)
+    return peso_total
 
 
 
 ##############################
-#          TESTS             #
+#          TESTS             
 ##############################
 
 
 def test_calcular_peso_minimo(benchmark):
     resultado = benchmark(calcularPesoArbol, aristas, ciudades)
-    assert resultado == 2
+    assert resultado == 2 
