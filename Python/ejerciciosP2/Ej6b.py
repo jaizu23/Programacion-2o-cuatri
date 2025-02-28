@@ -11,7 +11,7 @@ def minimo_pistas (pistas: list[tuple[int,int]]) -> int:
         # representando con 1 que empiece y con 0 que acabe
 
         horas = []
-        for reserva in Entrada:
+        for reserva in pistas:
             horas.append((reserva[0], 1))
             horas.append((reserva[1], 0))
         
