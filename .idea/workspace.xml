@@ -1,50 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="da957e57-0f53-48fa-9250-33ce4df33d4e" name="Changes" comment="" />
+    <list default="true" id="da957e57-0f53-48fa-9250-33ce4df33d4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/Ejercicio1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/PrD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/PrsX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/SistemaDomotico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Ejercicio2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Responsable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Urna.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/Ejercicio3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/TiendaRopa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Edificio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Ejercicio4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Trabajador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Ejercicio5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Ninio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Parque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Columpio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Ninnio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Academia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Sala.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Academia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Estudiante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Examen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Sala.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0_3/Pintor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0_3/Ventana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej6/Pintor6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej6/Ventana6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej7/Bicho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej7/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej8/CuantosPrimos2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej8/PrimosThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej9/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej9/hilo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/Calculador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/Resultado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/SumaPrimos1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/Calculador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/Resultado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/SumaPrimos2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/Calculador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/Resultado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/SumaPrimos2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Paleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Pintor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Ventana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej4/hilo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej4/threadExhauster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Programacion_2o_cuatri.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programacion_2o_cuatri.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "jaizu23"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jaizu23&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/jaizu23/Programacion-2o-cuatri.git",
-    "accountId": "f3cf7fec-8d72-46a5-8c86-c87f284e96c8"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jaizu23/Programacion-2o-cuatri.git&quot;,
+    &quot;accountId&quot;: &quot;f3cf7fec-8d72-46a5-8c86-c87f284e96c8&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2tdKwwOC8rpVQFVGJBvn4hRlRix" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Universidad/Cursos/2º 2º cuatri/Programacion_2o_cuatri",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CuantosPrimos2.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Examen.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SumaPrimos1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SumaPrimos2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ventana.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ventana6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.java.repasoPECT1.Ejercicio5.intento.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.java.sesion1.Ej9.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.java.sesion2.Ej2.SumaPrimos2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Universidad/Cursos/2º 2º cuatri/Programacion_2o_cuatri/Java/src/main/java/sesion2/Ej2&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\sesion2\Ej2" />
+      <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\sesion1\Ej6" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Examen">
+    <configuration name="CuantosPrimos2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.sesion1.Ej8.CuantosPrimos2" />
+      <module name="Programacion_2o_cuatri" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.sesion1.Ej8.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Examen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.repasoPECT1.Examen2023.opcion1.Examen" />
+      <module name="Programacion_2o_cuatri" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.repasoPECT1.Examen2023.opcion1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumaPrimos1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.sesion2.Ej0.E1.SumaPrimos1" />
+      <module name="Programacion_2o_cuatri" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.sesion2.Ej0.E1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumaPrimos2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.sesion2.Ej0.E2.SumaPrimos2" />
+      <module name="Programacion_2o_cuatri" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.sesion2.Ej0.E2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.java.repasoPECT1.Ejercicio5.intento.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.repasoPECT1.Ejercicio5.intento.Main" />
+      <module name="Programacion_2o_cuatri" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.repasoPECT1.Ejercicio5.intento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Examen" />
+        <item itemvalue="Application.main.java.repasoPECT1.Ejercicio5.intento.Main" />
+        <item itemvalue="Application.CuantosPrimos2" />
+        <item itemvalue="Application.SumaPrimos1" />
+        <item itemvalue="Application.SumaPrimos2" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,6 +229,10 @@
       <option name="presentableId" value="Default" />
       <updated>1740676757452</updated>
       <workItem from="1740676759185" duration="100000" />
+      <workItem from="1740937019526" duration="7271000" />
+      <workItem from="1741005785818" duration="1582000" />
+      <workItem from="1741088773151" duration="6948000" />
+      <workItem from="1741100026121" duration="27000" />
     </task>
     <servers />
   </component>
