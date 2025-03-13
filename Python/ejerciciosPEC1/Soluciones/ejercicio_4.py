@@ -13,16 +13,15 @@ def es_coincidente(lista :list) -> bool:
 
     def _es_coincidente(lista :list, ini :int, fin :int) -> bool:
         if ini == fin:
-            return lista[ini] == ini
+            return lista[ini] == ini + 1
         else:
             medio = (ini + fin) // 2
-            if lista[medio] == medio:
+            if lista[medio] == medio + 1:
                 return True
-            elif lista[medio] < medio:
-                ini = medio
+            elif lista[medio] > medio:
+                return _es_coincidente(lista, ini, medio - 1)
             else:
-                fin = medio
-            return _es_coincidente(lista, ini, fin)
+                return _es_coincidente(lista, medio + 1, fin)
         
     return _es_coincidente(lista, 0, len(lista) - 1)
 

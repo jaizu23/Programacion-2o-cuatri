@@ -30,3 +30,38 @@ Planteamiento:
     otra forma:
         - max(inicio + inicio+1, elegir(tenistas[inicio+1]))
 """
+
+def mejor_pareja (parejas: list[int]) -> tuple[int, int]:
+    """Devuelve la pareja contigua de enteros cuya suma sea máxima"""
+    def mp_aux(parejas, inicio, final) -> int:
+        # Casos base
+        if inicio >= final:
+            return -1
+        elif final - inicio == 1:
+            return inicio
+        else:
+            # Caso rec
+            medio = (inicio + final) // 2
+            izq = mp_aux(parejas, inicio, medio)
+            dcha = mp_aux(parejas, medio + 1, final)
+
+            suma = lambda list, int: list[int] + list[int + 1] 
+
+            suma_medio = suma(parejas, medio)
+            suma_izq = suma(parejas, izq)
+            suma_dcha = suma(parejas, dcha)
+
+            if suma_medio >= suma_izq and suma_medio >= suma_dcha:
+                return medio    
+            elif suma_izq >= suma_medio and suma_izq >= suma_dcha:
+                return izq
+            else:   
+                return dcha
+            
+    posicion = mp_aux(parejas, 0, len(parejas) - 1)
+    return (posicion, posicion + 1)
+
+jugadores = [95, 79, 68, 68, 12, 43, 69, 97, 84, 83, 47]
+print(f'Jugadores: {jugadores}')
+pareja = mejor_pareja(jugadores)
+print(f'Pareja: {pareja}')
