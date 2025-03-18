@@ -1,6 +1,6 @@
 
 def f(x: int):
-    return (x + 3)**2
+    return (x + 3)**8
 
 
 def encontrar_minimo(f, p1: int, p2: int, w):
@@ -49,8 +49,27 @@ def encontrar_valores(f, p1, p2, k, w):
     x1 = busqueda_binaria_en_monotonia(f, p1, min, k, w, True)
     x2 = busqueda_binaria_en_monotonia(f, min, p2, k, w, False)
 
-    return (x1, x2)
+    return (round(x1, 3), round(x2, 3))
+    #return (x1,x2)
 
 
 
-print(encontrar_valores(f, -5, 5, 2, 0.0000000001))
+print(encontrar_valores(f, -5, 5, 3, 0.000000001))
+
+
+##############################
+#          TESTS             #
+##############################
+
+def test_encontrar_valores():
+    funcion = lambda x: (x +3)**8
+    numeros = [-1, 0, 1, 2, 3]
+    valores    = [(None, None), (None, None), (-4-0, -2.0), (-4.091, -1.909), (-4.147, -1.853)]
+    resultados = [] # Almacena los valores que devuelve contar_caracteres con cada nombre
+    i = 0
+    while  i < len(numeros):
+        res = encontrar_valores(funcion, -5, 5, numeros[i], 0.000000001)
+        resultados += [(round(res[0], 3), round(res[1], 3))]
+    assert resultados == valores, 'Todos los valores coinciden' # Comprueba que coinciden todos los valores
+
+
