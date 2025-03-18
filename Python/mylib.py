@@ -36,18 +36,18 @@ def test_contar_caracteres():
     assert resultados == valores, 'Todos los valores coinciden' # Comprueba que coinciden todos los valores
 
 def test_benchmark_contar_caracteres():
-    import timer
+    import timer2
     import sys
     sys.setrecursionlimit(10**6)
 
-    @timer.benchmark # Usa el decorador de la biblioteca timer
+    @timer2.benchmark # Usa el decorador de la biblioteca timer
     def _timer_contar_caracteres(cadena :str) -> tuple: # (resultado, tiempo)
         return contar_caracteres(cadena)
     
-    timer.warmup()
+    timer2.warmup()
     print()
     for n in range(1000, 10001, 1000):
         cadena = '_' * n # Genera una cadena de longitud n
         resultado = _timer_contar_caracteres(cadena) # Devuelve la tupla (resultado, tiempo)
-        assert resultado[timer.RESULT] == len(cadena), 'La longitud es correcta' # Comprueba el resultado de la función
-        print(f'Elapsed time ({n}): {resultado[timer.TIME]:.3f} ms') # Muestra el tiempo por pantalla
+        assert resultado[timer2.RESULT] == len(cadena), 'La longitud es correcta' # Comprueba el resultado de la función
+        print(f'Elapsed time ({n}): {resultado[timer2.TIME]:.3f} ms') # Muestra el tiempo por pantalla

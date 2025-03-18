@@ -44,3 +44,43 @@ def minimo_pistas (reservas: list[tuple[int,int]]) -> int:
         return pistasMaximasUsadas
     
 print (f"El numero minimo de pistas necesarias es {minimo_pistas(Entrada)}")
+
+
+
+##############################
+#          TESTS             #
+##############################
+
+
+def test_minimo_pista():
+    Entrada = [(10, 12), (9, 11), (11, 13), (11, 15), (8, 12), (12, 16), (13, 14)]
+    valor = [4]
+    resultado = [] # Almacena el valor que devuelve minimo_pista
+    resultado = [minimo_pistas(Entrada)]
+    assert resultado == valor, 'El valor coincide' # Comprueva que el valor coincide
+
+def test_benchmark_contar_caracteres():
+    from Python import timer2 
+    import random
+
+    def rango_aleatorios( max, ranMin, ranMax):
+        i = 0
+        while i < max:
+            yield (random.randInt(ranMin, ranMax), random.randInt(ranMin, ranMax))
+            i += 1
+    
+    lista = list(rango_aleatorios(10000, 1, 10))
+
+    @timer2.benchmark # Usa el decorador de la biblioteca timer
+    def _timer_minimo_pistas(valores :list):
+        return minimo_pistas(valores)
+    
+    timer2.warmup()
+    print()
+    for n in range(1000, 10001, 1000):
+        nueva = lista[:n]
+        resultado = _timer_minimo_pistas(nueva) 
+        assert resultado[timer2.RESULT] == len(nueva), 'La longitud es correcta' # Comprueba el resultado de la función
+        print(f'Elapsed time ({n}): {resultado[timer2.TIME]:.3f} ms') # Muestra el tiempo por pantalla
+
+

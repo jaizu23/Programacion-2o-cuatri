@@ -66,7 +66,7 @@ def test_maximo_minimo():
     assert resultados == valores, 'Todos los valores coinciden' # Comprueba que coinciden todos los valores
 
 def test_benchmark_contar_caracteres():
-    from Python import timer
+    from Python import timer2
     import random
 
     def rango_aleatorios( max, ranMin, ranMax):
@@ -77,15 +77,15 @@ def test_benchmark_contar_caracteres():
     
     lista = list(rango_aleatorios(10000, 1, 10))
 
-    @timer.benchmark # Usa el decorador de la biblioteca timer
+    @timer2.benchmark # Usa el decorador de la biblioteca timer
     def _timer_contar_caracteres(valores :list) -> tuple: # (resultado, tiempo)
         return maximo_minimo(valores)
     
-    timer.warmup()
+    timer2.warmup()
     print()
     for n in range(1000, 10001, 1000):
         nueva = lista[:n]
-        resultado = _timer_contar_caracteres(lista) # Devuelve la tupla (resultado, tiempo)
-        assert resultado[timer.RESULT] == len(lista), 'La longitud es correcta' # Comprueba el resultado de la función
-        print(f'Elapsed time ({n}): {resultado[timer.TIME]:.3f} ms') # Muestra el tiempo por pantalla
+        resultado = _timer_contar_caracteres(nueva) # Devuelve la tupla (resultado, tiempo)
+        assert resultado[timer2.RESULT] == len(nueva), 'La longitud es correcta' # Comprueba el resultado de la función
+        print(f'Elapsed time ({n}): {resultado[timer2.TIME]:.3f} ms') # Muestra el tiempo por pantalla
 

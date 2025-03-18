@@ -65,11 +65,11 @@ def test_encontrar_valores():
     funcion = lambda x: (x +3)**8
     numeros = [-1, 0, 1, 2, 3]
     valores    = [(None, None), (None, None), (-4-0, -2.0), (-4.091, -1.909), (-4.147, -1.853)]
-    resultados = [] # Almacena los valores que devuelve contar_caracteres con cada nombre
+    resultados = [] 
     i = 0
     while  i < len(numeros):
         res = encontrar_valores(funcion, -5, 5, numeros[i], 0.000000001)
         resultados += [(round(res[0], 3), round(res[1], 3))]
-    assert resultados == valores, 'Todos los valores coinciden' # Comprueba que coinciden todos los valores
+    assert resultados == valores, 'Todos los valores coinciden' 
 
 
