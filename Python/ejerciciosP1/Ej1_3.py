@@ -1,4 +1,4 @@
-from Python.ejerciciosP1.Ej2 import *
+from Ej1_2 import *
 def inserta_ordenado(lista :list, num :int) -> list:
     """ Devuelve la lista con el número insertado en orden ascendente """
     res = []                                                # O(1)
