@@ -30,7 +30,7 @@ def distancia_maxima(alturas: list[int]) -> int:
 minimo = random.randint(25,200) # El mínimo será una distancia entre 25 y 500 metros
 longitud_puente = 1000 # El puente medirá entre 50 y 200 metros
 
-cantidad_izq = random.randint(1, longitud_puente) #s El número de medidas a la izquierda del mínimo
+cantidad_izq = random.randint(1, longitud_puente) # El número de medidas a la izquierda del mínimo
 cantidad_dcha = longitud_puente - cantidad_izq # El número de medidas a la derecha del mínimo
 
 print(cantidad_izq)
@@ -39,10 +39,10 @@ print(cantidad_dcha)
 alturas_dcha = sorted(random.sample(range(0, minimo - 1), cantidad_dcha if cantidad_dcha < minimo - 1 else minimo - 2), reverse=False) # Las medidas serán enteros aleatorios del 1 a la altura máxima
 
 alturas = []
-(alturas.append(alturas_izq))
+alturas.append(alturas_izq)
 alturas.append(minimo)
 alturas.append(alturas_dcha) # Unimos las alturas en una sola lista
 
-print(distancia_maxima(alturas, 2))
+print(distancia_maxima(alturas))
 
          

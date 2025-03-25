@@ -88,6 +88,11 @@ def calcularPesoArbol(aristas:list, nodos: list) -> int:
         peso_total+=arista[2]
     return peso_total
 
+
+##############################
+#          TESTS             #
+##############################
+
 def calcularPesoArbolBenchmark() -> int:
     """ Función para calcular el Benchmark ya que en iteraciones sucesivas de la funcion
     calcularPesoArbol los argumentos al ser listas se modifican sus elementos y no son los argumentos inciales.
@@ -110,10 +115,6 @@ def calcularPesoArbolBenchmark() -> int:
 
     return calcularPesoArbol(aristas, ciudades)
 
-
-##############################
-#          TESTS             #
-##############################
 
 def test_calcular_peso_minimo (benchmark):
     resultado = benchmark(calcularPesoArbolBenchmark)
