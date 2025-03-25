@@ -48,6 +48,7 @@ def is_bucle(conjuntos :list, arista :tuple) -> bool:
     """ Hay un bucle si los nodos pertenecen al mismo conjunto (algoritmo union-find) """
     set_u = find(conjuntos, arista[U])
     set_v = find(conjuntos, arista[V])
+
     return set_u == set_v
 
 def kruskal(aristas :list, conjuntos :list) -> list:
@@ -64,7 +65,6 @@ def kruskal(aristas :list, conjuntos :list) -> list:
 
 # Programa
 ciudades = [{"Madrid"}, {"Segovia"}, {"Burgos"}, {"Cádiz"}, {"Valencia"}, {"Toledo"}, {"Barcelona"}, {"Vitoria"}]
-ciudades = [set([c]) for c in [{"Madrid"}, {"Segovia"}, {"Burgos"}, {"Cádiz"}, {"Valencia"}, {"Toledo"}, {"Barcelona"}, {"Vitoria"}]]
 aristas = []
 aristas.append(("Madrid", "Segovia", 3000))
 aristas.append(("Segovia", "Burgos", 10000))
@@ -78,6 +78,7 @@ aristas.append(("Cádiz", "Valencia", 17000))
 aristas.append(("Barcelona", "Vitoria", 6000))
 aristas.append(("Vitoria", "Madrid", 16000))
 aristas.append(("Madrid", "Cádiz", 19000))
+
 
 def calcularPesoArbol(aristas:list, nodos: list) -> int:
     arbol_expansion_minima = kruskal(aristas, nodos)
