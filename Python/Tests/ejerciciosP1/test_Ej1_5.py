@@ -1,4 +1,4 @@
-from Python.ejerciciosP1.Ej5 import esPrimo
+from Python.ejerciciosP1.Ej1_5 import esPrimo
 
 def test_comprobar_primo_1000(benchmark):
     resultado = benchmark(esPrimo,1000)

@@ -1,3 +1,3 @@
 import pytest, glob
 
-pytest.main(glob.glob("**/*.py", recursive=True))
+pytest.main(glob.glob("**/test_*.py", recursive=True))
