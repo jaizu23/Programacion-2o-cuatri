@@ -55,7 +55,7 @@ def test_benchmark_contar_caracteres():
     def rango_aleatorios( max, ranMin, ranMax):
         i = 0
         while i < max:
-            yield (random.randInt(ranMin, ranMax), random.randInt(ranMin, ranMax))
+            yield (random.randint(ranMin, ranMax), random.randint(ranMin, ranMax))
             i += 1
     
     lista = list(rango_aleatorios(10000, 1, 10))
@@ -69,7 +69,7 @@ def test_benchmark_contar_caracteres():
     for n in range(1000, 10001, 1000):
         nueva = lista[:n]
         resultado = _timer_minimo_pistas(nueva) 
-        assert resultado[timer2.RESULT] == len(nueva), 'La longitud es correcta' # Comprueba el resultado de la función
+        assert resultado[timer2.RESULT] == len(nueva), 'La longitud no es correcta' # Comprueba el resultado de la función
         print(f'Elapsed time ({n}): {resultado[timer2.TIME]:.3f} ms') # Muestra el tiempo por pantalla
 
 
