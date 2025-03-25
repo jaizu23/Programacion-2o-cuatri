@@ -1,7 +1,7 @@
 
 def sumatorio(num: int) -> int:
     """O(n)"""
-    if num < 0:
+    if num <= 0:
         return -1
     if num == 1:
         return 1
@@ -28,7 +28,7 @@ def test_casos_limite_1():
 
 def test_casos_limite_2():
     resultado = sumatorio(0)
-    assert resultado == 0
+    assert resultado == -1
 
 def test_casos_limite_3():
     resultado = sumatorio(6)

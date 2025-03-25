@@ -64,6 +64,7 @@ def kruskal(aristas :list, conjuntos :list) -> list:
 
 # Programa
 ciudades = [{"Madrid"}, {"Segovia"}, {"Burgos"}, {"Cádiz"}, {"Valencia"}, {"Toledo"}, {"Barcelona"}, {"Vitoria"}]
+ciudades = [set([c]) for c in [{"Madrid"}, {"Segovia"}, {"Burgos"}, {"Cádiz"}, {"Valencia"}, {"Toledo"}, {"Barcelona"}, {"Vitoria"}]]
 aristas = []
 aristas.append(("Madrid", "Segovia", 3000))
 aristas.append(("Segovia", "Burgos", 10000))

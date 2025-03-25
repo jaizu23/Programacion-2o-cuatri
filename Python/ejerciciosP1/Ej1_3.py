@@ -23,7 +23,3 @@ for num in lista:                                           # Aplicando la fórm
         impares = inserta_ordenado(impares, num)            # O(1) + O(n) -> aprox(O(n))
 print(pares)                                                # O(1)  
 print(impares)                                              # O(1)
-
-
-
-

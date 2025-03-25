@@ -28,18 +28,21 @@ def distancia_maxima(alturas: list[int], epsilon: int) -> int:
 
 
 # Generamos las alturas del valle al puente de forma aleatoria
-minimo = random.randint(25,500) # El mínimo será una distancia entre 25 y 500 metros
-longitud_puente = random.randint(50, 200) # El puente medirá entre 50 y 200 metros
+minimo = random.randint(25,200) # El mínimo será una distancia entre 25 y 500 metros
+longitud_puente = 1000 # El puente medirá entre 50 y 200 metros
 
-cantidad_izq = random.randint(1, longitud_puente) # El número de medidas a la izquierda del mínimo
-cantidad_dcha = 200 - cantidad_izq # El número de medidas a la derecha del mínimo
+cantidad_izq = random.randint(1, longitud_puente) #s El número de medidas a la izquierda del mínimo
+cantidad_dcha = longitud_puente - cantidad_izq # El número de medidas a la derecha del mínimo
 
-alturas_izq = [random.sample(range(0, cantidad_izq),1,minimo - 1)] # Las medidas serán enteros aleatorios del 1 a la altura máxima
-alturas_dcha = [random.sample(range(0, cantidad_dcha),1,minimo - 1)] # Las medidas serán enteros aleatorios del 1 a la altura máxima
-alturas_izq = alturas_izq.sort # La pendiente es constante por lo que las alturas estarán ordenadas
-alturas_dcha = alturas_dcha.sort(reversed) #La pendiente es constante por lo que las alturas estarán ordenadas
+print(cantidad_izq)
+alturas_izq = sorted(random.sample(range(0, minimo - 1), cantidad_izq if cantidad_izq < minimo - 1 else minimo - 2), reverse=True) # Las medidas serán enteros aleatorios del 1 a la altura máxima
+print(cantidad_dcha)
+alturas_dcha = sorted(random.sample(range(0, minimo - 1), cantidad_dcha if cantidad_dcha < minimo - 1 else minimo - 2), reverse=False) # Las medidas serán enteros aleatorios del 1 a la altura máxima
 
-alturas = alturas_izq.append(minimo).append(alturas_dcha) # Unimos las alturas en una sola lista
+alturas = []
+(alturas.append(alturas_izq))
+alturas.append(minimo)
+alturas.append(alturas_dcha) # Unimos las alturas en una sola lista
 
 print(distancia_maxima(alturas, 2))
 

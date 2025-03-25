@@ -13,5 +13,3 @@ Planteamineto:
 -> mientras queden elementos: 
     -> añadir un elemento de cada lista.
 """
-
-def esquiadoras (esquiadoras: list[int], )
