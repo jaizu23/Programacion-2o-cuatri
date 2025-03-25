@@ -1,8 +1,3 @@
-
-def f(x: int):
-    return (x + 3)**8
-
-
 def encontrar_minimo(f, p1: int, p2: int, w):
     #Usamos la busqueda ternaria para encontrar el valor minimo de la función (con una aprximacion de w).
     while p2 - p1 > w:
@@ -43,16 +38,18 @@ def busqueda_binaria_en_monotonia(f, p1, p2, k, w, decrece):
 def encontrar_valores(f, p1, p2, k, w):
     #usamos las funciones anteriores para encontrar el mínimo en la función y así poder buscar los valores en cada lado de la función.
 
-    min = encontrar_minimo(f, p1, p2, w)
+    min = encontrar_minimo(f, p1, p2, w)                           #O(log n)
     f_min = f(min)
 
-    x1 = busqueda_binaria_en_monotonia(f, p1, min, k, w, True)
-    x2 = busqueda_binaria_en_monotonia(f, min, p2, k, w, False)
+    x1 = busqueda_binaria_en_monotonia(f, p1, min, k, w, True)     #O(log n)
+    x2 = busqueda_binaria_en_monotonia(f, min, p2, k, w, False)    #O(log n)
 
     return (round(x1, 3), round(x2, 3))
     #return (x1,x2)
 
 
+def f(x: int):
+    return (x + 3)**8
 
 print(encontrar_valores(f, -5, 5, 3, 0.000000001))
 

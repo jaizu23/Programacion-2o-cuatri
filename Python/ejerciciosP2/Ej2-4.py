@@ -64,7 +64,6 @@ def kruskal(aristas :list, conjuntos :list) -> list:
 
 # Programa
 ciudades = [{"Madrid"}, {"Segovia"}, {"Burgos"}, {"Cádiz"}, {"Valencia"}, {"Toledo"}, {"Barcelona"}, {"Vitoria"}]
-ciudades = [set([c]) for c in [{"Madrid"}, {"Segovia"}, {"Burgos"}, {"Cádiz"}, {"Valencia"}, {"Toledo"}, {"Barcelona"}, {"Vitoria"}]]
 aristas = []
 aristas.append(("Madrid", "Segovia", 3000))
 aristas.append(("Segovia", "Burgos", 10000))
@@ -87,12 +86,33 @@ def calcularPesoArbol(aristas:list, nodos: list) -> int:
         peso_total+=arista[2]
     return peso_total
 
+def calcularPesoArbolBenchmark() -> int:
+    """ Función para calcular el Benchmark ya que en iteraciones sucesivas de la funcion
+    calcularPesoArbol los argumentos al ser listas se modifican sus elementos y no son los argumentos inciales.
+    En esta función creamos las listas cuidades y aristas de nuevo en cada iteración de la función"""
+    
+    ciudades = [{"Madrid"}, {"Segovia"}, {"Burgos"}, {"Cádiz"}, {"Valencia"}, {"Toledo"}, {"Barcelona"}, {"Vitoria"}]
+    aristas = []
+    aristas.append(("Madrid", "Segovia", 3000))
+    aristas.append(("Segovia", "Burgos", 10000))
+    aristas.append(("Burgos", "Vitoria", 5000))
+    aristas.append(("Madrid", "Toledo", 5000))
+    aristas.append(("Toledo", "Cádiz", 15000))
+    aristas.append(("Madrid", "Valencia", 12000))
+    aristas.append(("Madrid", "Barcelona", 15000))
+    aristas.append(("Barcelona", "Valencia", 8000))
+    aristas.append(("Cádiz", "Valencia", 17000))
+    aristas.append(("Barcelona", "Vitoria", 6000))
+    aristas.append(("Vitoria", "Madrid", 16000))
+    aristas.append(("Madrid", "Cádiz", 19000))
+
+    return calcularPesoArbol(aristas, ciudades)
+
 
 ##############################
 #          TESTS             #
 ##############################
 
-
 def test_calcular_peso_minimo (benchmark):
-    resultado = benchmark(calcularPesoArbol, aristas, ciudades)
+    resultado = benchmark(calcularPesoArbolBenchmark)
     assert resultado == 52000

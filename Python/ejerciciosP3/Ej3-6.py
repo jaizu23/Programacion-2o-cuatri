@@ -1,6 +1,6 @@
 import random
 
-def distancia_maxima(alturas: list[int], epsilon: int) -> int:
+def distancia_maxima(alturas: list[int]) -> int:
     """Emplea búsqueda binaria para encontrar la distancia máxima, con una tolerancia de error de epsilon elementos.
     Se aplica un enfoque iterativo para evitar exceder la profundidad de recursión máxima"""                
             
@@ -16,7 +16,6 @@ def distancia_maxima(alturas: list[int], epsilon: int) -> int:
 
             while izq < dcha:
                 medio = (izq + dcha) // 2
-                # En caso de encontrarnos en una zona plana con valores iguales, salimos de esta hacia la derecha
                 if medio:
                     return alturas[medio]
                 
