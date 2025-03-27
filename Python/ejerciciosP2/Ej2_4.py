@@ -94,4 +94,11 @@ def test_calcular_peso_minimo (benchmark):
         return calcularPesoArbol(aristas, ciudades)
     
     resultado = benchmark(calcularPesoArbolBenchmark)
-    assert resultado == 52000
+    assert resultado == 52000, 'El valor no coincide'
+
+def test_calcular_peso_minimo_vacio (benchmark):
+    ciudades = []
+    aristas = []
+
+    resultado = benchmark(calcularPesoArbol, aristas, ciudades)
+    assert resultado == 0, 'El valor no coincide'

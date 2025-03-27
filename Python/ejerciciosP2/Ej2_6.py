@@ -39,12 +39,19 @@ print (f"El numero minimo de pistas necesarias es {minimo_pistas(Entrada)}")
 #          TESTS             #
 ##############################
 
+def test_minimo_pista_vacia():
+    Entrada = []
+    valor = None
+    resultado = []
+    resultado = minimo_pistas(Entrada)
+    assert resultado == valor, 'Los valores no coinciden'
+
 def test_minimo_pista():
     Entrada = [(10, 12), (9, 11), (11, 13), (11, 15), (8, 12), (12, 16), (13, 14)]
     valor = [4]
     resultado = [] # Almacena el valor que devuelve minimo_pista
     resultado = [minimo_pistas(Entrada)]
-    assert resultado == valor, 'El valor coincide' # Comprueba que el valor coincide
+    assert resultado == valor, 'El valor no coincide' # Comprueba que el valor coincide
 
 def test_benchmark_contar_caracteres():
     from Python import timer2 
