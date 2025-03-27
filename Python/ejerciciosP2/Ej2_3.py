@@ -59,31 +59,24 @@ print(maximo_minimo(V))
 
 def test_maximo_minimo():
     numeros    = [666666,3,4,77,1,2,3,6,7,85,4,-45,1,2,8,99,45,129,1062,6394,1,24,5,39]
-    valores    = [666666, -45]
-    resultados = [] # Almacena los valores que devuelve contar_caracteres con cada nombre
-    resultados += [maximo_minimo(numeros)]
+    valores    = (666666, -45)
+    resultados = maximo_minimo(numeros) # Almacena los valores que devuelve contar_caracteres con cada nombre
     assert resultados == valores, 'Todos los valores coinciden' # Comprueba que coinciden todos los valores
 
-def test_benchmark_contar_caracteres():
+import pytest
+@pytest.mark.parametrize("n", range(1000, 10001, 1000))
+def test_benchmark_contar_caracteres(benchmark, n):
     from Python import timer2
     import random
 
     def rango_aleatorios( max, ranMin, ranMax):
         i = 0
         while i < max:
-            yield random.randInt(ranMin, ranMax)
+            yield random.randint(ranMin, ranMax)
             i += 1
     
     lista = list(rango_aleatorios(10000, 1, 10))
-
-    @timer2.benchmark # Usa el decorador de la biblioteca timer
-    def _timer_contar_caracteres(valores :list) -> tuple: # (resultado, tiempo)
-        return maximo_minimo(valores)
     
-    timer2.warmup()
-    print()
-    for n in range(1000, 10001, 1000):
-        nueva = lista[:n]
-        resultado = _timer_contar_caracteres(nueva) # Devuelve la tupla (resultado, tiempo)
-        assert resultado[timer2.RESULT] == len(nueva), 'La longitud es correcta' # Comprueba el resultado de la función
-        print(f'Elapsed time ({n}): {resultado[timer2.TIME]:.3f} ms') # Muestra el tiempo por pantalla
+    nueva = lista[:n]
+    resultado = benchmark(maximo_minimo, nueva) # Devuelve la tupla (resultado, tiempo)
+    assert resultado[0] == max(nueva) and resultado[1] == min(nueva), 'El maximo y el minimo son incorrectos'
