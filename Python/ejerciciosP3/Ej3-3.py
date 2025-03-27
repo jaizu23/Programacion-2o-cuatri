@@ -67,6 +67,6 @@ def test_encontrar_valores():
         res = encontrar_valores(funcion, -5, 5, numeros[i], 0.000000001)
         resultados.append((None if res[0] == None else round(res[0], 3), None if res[1] == None else round(res[1], 3)))
         i += 1
-    assert resultados == valores, 'Todos los valores coinciden' 
-
+    assert resultados == valores, 'Los valores no coinciden' 
+    
 
