@@ -49,8 +49,7 @@ def test_minimo_pista_vacia():
 def test_minimo_pista():
     Entrada = [(10, 12), (9, 11), (11, 13), (11, 15), (8, 12), (12, 16), (13, 14)]
     valor = [4]
-    resultado = [] # Almacena el valor que devuelve minimo_pista
-    resultado = [minimo_pistas(Entrada)]
+    resultado = [minimo_pistas(Entrada)] # Almacena el valor que devuelve minimo_pista
     assert resultado == valor, 'El valor no coincide' # Comprueba que el valor coincide
 
 def test_benchmark_contar_caracteres():
