@@ -1,4 +1,3 @@
-
 def sumatorio(num: int) -> int:
     """O(n)"""
     if num <= 0:
@@ -6,9 +5,6 @@ def sumatorio(num: int) -> int:
     if num == 1:
         return 1
     return num + sumatorio(num - 1)
-
-
-
 
 ##############################
 #          TESTS             #
