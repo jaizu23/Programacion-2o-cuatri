@@ -3,8 +3,16 @@ def traspuesta (matriz: list[list[int]]):
     del tipo divide y vencerás. La complejidad es O(n^2)"""
 
     # Casos base
+<<<<<<< HEAD
+    if len(matriz) <= 0:
+        print("Error, la matriz está vacia")
+        return None
+    if len(matriz) == 1:
+        return [[valor] for valor in matriz[0]]
+=======
     if len(matriz) == 1:                
         return [[valor] for valor in matriz[0]]                 # O(n)
+>>>>>>> 20dab7e04087898c923257d68c9a972a0b9612c7
     elif len(matriz[0]) == 1:
         return [[valor[0] for valor in matriz]]                 # O(n)
     else:
@@ -86,7 +94,10 @@ def test_traspuesta():
     [0, 1, 0, 0], 
     [0, 0, 1, 0], 
     [0, 0, 0, 1]
-],]
+],[[0, 1, 1], 
+   [1, 0, 1], 
+   [0, 1, 1]
+]]
     resultado = [] # Almacena el valor que devuelve traspuesta()
     for matriz in Entrada:
         resultado.append(traspuesta(matriz))
@@ -95,7 +106,7 @@ def test_traspuesta():
 
 def test_traspuesta_vacia():
     Entrada = []
-    valores = []
+    valores = None
     resultado = []
     resultado = traspuesta(Entrada)
     assert resultado == valores, 'Las matrices no coinciden' # Comprueva que el valor coincide
