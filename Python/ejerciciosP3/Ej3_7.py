@@ -36,11 +36,9 @@ def traspuesta (matriz: list[list[int]]):
 
 
 matriz = [
-    [0, 0, 0, 1, 0], 
-    [0, 0, 1, 0, 1], 
-    [1, 1, 0, 0, 0], 
-    [1, 1, 0, 1, 1], 
-    [1, 0, 1, 0, 0]
+    [0, 1, 0],
+    [1, 0, 1],
+    [1, 1, 1]
 ]
 print(traspuesta(matriz))
 
@@ -58,14 +56,14 @@ def test_traspuesta():
     [1, 1, 0, 1, 1], 
     [1, 0, 1, 0, 0]
 ],[
-    [1, 2, 3], 
-    [4, 5, 6], 
-    [7, 8, 9], 
-    [10, 11, 12]
+    [1, 0, 0, 0],
+    [0, 1, 0, 0],
+    [0, 0, 1, 0],
+    [0, 0, 0, 1]
 ],[
-    [5, 6], 
-    [7, 8], 
-    [9, 10]
+    [0, 1, 0],
+    [1, 0, 1],
+    [1, 1, 1]
 ]]
     valores = [[
     [0, 0, 1, 1, 1], 
@@ -74,14 +72,20 @@ def test_traspuesta():
     [1, 0, 0, 1, 0], 
     [0, 1, 0, 1, 0]
 ],[
-    [1, 4, 7, 10], 
-    [2, 5, 8, 11], 
-    [3, 6, 9, 12]
-],[
-    [5, 7, 9], 
-    [6, 8, 10]
-]]
+    [1, 0, 0, 0], 
+    [0, 1, 0, 0], 
+    [0, 0, 1, 0], 
+    [0, 0, 0, 1]
+],]
     resultado = [] # Almacena el valor que devuelve traspuesta()
     for matriz in Entrada:
         resultado.append(traspuesta(matriz))
+    assert resultado == valores, 'Las matrices no coinciden' # Comprueva que el valor coincide
+
+
+def test_traspuesta_vacia():
+    Entrada = []
+    valores = []
+    resultado = []
+    resultado = traspuesta(Entrada)
     assert resultado == valores, 'Las matrices no coinciden' # Comprueva que el valor coincide
