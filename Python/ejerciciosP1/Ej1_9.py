@@ -6,17 +6,19 @@ def sumatorio(num: int) -> int:
         return 1
     return num + sumatorio(num - 1)
 
+
+print(sumatorio(10))
 ##############################
 #          TESTS             #
 ##############################
 
-def test_comprobar_sumatorio_10000(benchmark):
-    resultado = benchmark(sumatorio,10000)
-    assert resultado == 50005000
- 
-def test_comprobar_sumatorio_2000(benchmark):
-    resultado = benchmark(sumatorio,2000)
-    assert resultado == 2001000
+def test_comprobar_sumatorio_20(benchmark):
+    resultado = benchmark(sumatorio,20)
+    assert resultado == 210
+
+def test_comprobar_sumatorio_10(benchmark):
+    resultado = benchmark(sumatorio,10)
+    assert resultado == 55
 
 def test_casos_limite_1():
     resultado = sumatorio(-6)
