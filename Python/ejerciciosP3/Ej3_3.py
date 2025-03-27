@@ -1,5 +1,5 @@
 def encontrar_minimo(f, p1: int, p2: int, w):
-    #Usamos la busqueda ternaria para encontrar el valor minimo de la función (con una aprximacion de w).
+    # Usamos busqueda ternaria para encontrar el valor minimo de la función (con una aprximacion de w).
     while p2 - p1 > w:
         corte1 = p1 + (p2 - p1)/3
         corte2 = p2 - (p2 - p1)/3
@@ -11,8 +11,8 @@ def encontrar_minimo(f, p1: int, p2: int, w):
     return (p1 + p2)/2
 
 def busqueda_binaria_en_monotonia(f, p1, p2, k, w, decrece):
-    #Utilizamos busqueda binaria para encontrar los valores de k, solo se retornará uno pues nos aseguramos de que la función sea 
-    #monótona en el intervalo que le introducimos.
+    # Utilizamos busqueda binaria para encontrar los valores de k, solo se retornará uno pues nos aseguramos de que la función sea 
+    # monótona en el intervalo que le introducimos.
     if decrece:
         if (f(p1) < k or f(p2) > k):
             return None
@@ -36,7 +36,7 @@ def busqueda_binaria_en_monotonia(f, p1, p2, k, w, decrece):
     return (p1 + p2)/2
 
 def encontrar_valores(f, p1, p2, k, w):
-    #usamos las funciones anteriores para encontrar el mínimo en la función y así poder buscar los valores en cada lado de la función.
+    # Usamos las funciones anteriores para encontrar el mínimo en la función y así poder buscar los valores en cada lado de la función.
 
     min = encontrar_minimo(f, p1, p2, w)                           #O(log n)
     f_min = f(min)
@@ -46,7 +46,7 @@ def encontrar_valores(f, p1, p2, k, w):
 
     return (None if x1 == None else x1, None if x2 == None else x2)
 
-
+# Prueba simple
 def f(x: int):
     return (x + 3)**8
 
@@ -67,6 +67,4 @@ def test_encontrar_valores():
         res = encontrar_valores(funcion, -5, 5, numeros[i], 0.000000001)
         resultados.append((None if res[0] == None else round(res[0], 3), None if res[1] == None else round(res[1], 3)))
         i += 1
-    assert resultados == valores, 'Los valores no coinciden' 
-    
-
+    assert resultados == valores, 'Todos los valores coinciden' 

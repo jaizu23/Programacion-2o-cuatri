@@ -1,5 +1,3 @@
-V = [666666,3,4,77,1,2,3,6,7,85,4,-45,1,2,8,99,45,129,1062,6394,1,24,5,39]
-
 def maximo_minimo (V: list[int]) -> tuple[int,int]:
     """Devuelve el maximo y el minimo de un vector de longitud n 
     en una tupla (maximo, minimo) empleando 3n/2 comparaciones como maximo"""
@@ -50,8 +48,9 @@ def maximo_minimo (V: list[int]) -> tuple[int,int]:
     print(f"Se han realizado {cuentaComparaciones} comparaciones para un vector de longitud {len(V)}")    
     return maximo, minimo
 
+# Prueba simple
+V = [666666,3,4,77,1,2,3,6,7,85,4,-45,1,2,8,99,45,129,1062,6394,1,24,5,39]
 print(maximo_minimo(V))
-
 
 ##############################
 #          TESTS             #
@@ -88,4 +87,3 @@ def test_benchmark_contar_caracteres():
         resultado = _timer_contar_caracteres(nueva) # Devuelve la tupla (resultado, tiempo)
         assert resultado[timer2.RESULT] == len(nueva), 'La longitud es correcta' # Comprueba el resultado de la función
         print(f'Elapsed time ({n}): {resultado[timer2.TIME]:.3f} ms') # Muestra el tiempo por pantalla
-

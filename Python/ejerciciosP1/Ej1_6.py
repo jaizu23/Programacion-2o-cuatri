@@ -1,4 +1,3 @@
-
 def esPerfecto(num: int) -> bool:
     """O(n)"""
     i = 1
