@@ -5,62 +5,139 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da957e57-0f53-48fa-9250-33ce4df33d4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/Ejercicio1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/PrD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/PrsX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/SistemaDomotico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Ejercicio2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Responsable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Urna.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/Ejercicio3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/TiendaRopa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Edificio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Ejercicio4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Trabajador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Ejercicio5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Ninio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Parque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Columpio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Ninnio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Academia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Examen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Sala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Academia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Estudiante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Examen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Sala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0_3/Pintor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0_3/Ventana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej6/Pintor6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej6/Ventana6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej7/Bicho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej7/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej8/CuantosPrimos2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej8/PrimosThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej9/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej9/hilo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/Calculador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/Resultado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/SumaPrimos1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/Calculador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/Resultado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/SumaPrimos2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/Calculador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/Resultado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/SumaPrimos2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Paleta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Pintor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Ventana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej4/hilo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej4/threadExhauster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_base.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_controls.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_fxml.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_graphics.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_media.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_javafx_swing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Examen_info_2025/Ej1/Estacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Examen_info_2025/Ej1/Vehiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Examen_info_2025/Ej1/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Examen_info_2025/Ej2/Reactor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Examen_info_2025/Ej2/SistemaCentral.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Examen_info_2025/Ej2/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej1/Jugador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej1/PistaJuego.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej1/SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej2/Museo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej2/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej2/SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej3/Circuito.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej3/RaceCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej3/SafetyCar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej3/SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej4/SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej4/TareaForjado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej4/TareaFundicion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej5/Prenda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej5/SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej5/TareaDoblado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/Ej5/TareaEmpaquetado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/aves/Aguila.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/aves/EspA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/aves/EspInv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/aves/Nido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/aves/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/Repaso/aves/pajaro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T3/Ej1/Buzon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T3/Ej1/Consumidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T3/Ej1/Productor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T3/Ej1/PruebaBuzon1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T4/Colores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T4/Paleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T4/Pintor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej1_2/Exposicion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej1_2/ListaThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej1_2/ProgPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej1_2/Visitante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej3/PistaTenis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej3/Tenista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej3/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej5/Colores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej5/Paleta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej5/Pintor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej6/Calculador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej6/Resultado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej6/SumaPrimos2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio1/Exposicion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio1/ListaThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio1/ScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio1/SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio1/Visitante.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio4/ListaThreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio4/Puente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio4/ScreenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio4/SystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ejercicio4/Vehiculo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Programacion_2o_cuatri.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Programacion_2o_cuatri.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/ejercicioTeoria4/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/ejercicioTeoria4/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/ejercicioTeoria4/SimulacionTienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/ejercicioTeoria4/SimulacionTienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/ejercicioTeoria4/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/ejercicioTeoria4/Tienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio1/Ejercicio1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/PrD.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio1/PrD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/PrsX.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio1/PrsX.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio1/SistemaDomotico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio1/SistemaDomotico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio2/Ejercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio2/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Responsable.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio2/Responsable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio2/Urna.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio2/Urna.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio3/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/Ejercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio3/Ejercicio3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio3/TiendaRopa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio3/TiendaRopa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Edificio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio4/Edificio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Ejercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio4/Ejercicio4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio4/Trabajador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio4/Trabajador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Ejercicio5.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio5/Ejercicio5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Ninio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio5/Ninio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/Parque.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio5/Parque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Columpio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio5/intento/Columpio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio5/intento/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Ejercicio5/intento/Ninnio.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Ejercicio5/intento/Ninnio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Academia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion1/Academia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion1/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Examen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion1/Examen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion1/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion1/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Academia.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion2/Academia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion2/Estudiante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Examen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion2/Examen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/repasoPECT1/Examen2023/opcion2/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/repasoPECT1/Examen2023/opcion2/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0/CuantosPrimos2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej0/CuantosPrimos2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0/PrimosThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej0/PrimosThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0/Resultado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej0/Resultado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej0/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0_3/Pintor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej0_3/Pintor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej0_3/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej0_3/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej6/Pintor6.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej6/Pintor6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej6/Ventana6.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej6/Ventana6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej7/Bicho.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej7/Bicho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej7/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej7/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej8/CuantosPrimos2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej8/CuantosPrimos2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej8/PrimosThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej8/PrimosThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej9/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej9/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion1/Ej9/hilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion1/Ej9/hilo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/Calculador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej0/E1/Calculador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/Resultado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej0/E1/Resultado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E1/SumaPrimos1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej0/E1/SumaPrimos1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/Calculador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej0/E2/Calculador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/Resultado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej0/E2/Resultado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej0/E2/SumaPrimos2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej0/E2/SumaPrimos2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/Calculador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej2/Calculador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/Resultado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej2/Resultado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej2/SumaPrimos2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej2/SumaPrimos2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Paleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej3/Paleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Pintor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej3/Pintor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej3/Ventana.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej3/Ventana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej4/hilo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej4/hilo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java/src/main/java/sesion2/Ej4/threadExhauster.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java/src/main/java/PEC1/sesion2/Ej4/threadExhauster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PL1_Juan_Gil_Aragonés_Marcos_Lucas_Vaquerizo.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/ejerciciosP2/Ej2_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/ejerciciosP2/Ej2_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/ejerciciosP3/Ej3_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/ejerciciosP3/Ej3_3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python/ejerciciosP3/Ej3_7.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python/ejerciciosP3/Ej3_7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/~$1_Juan_Gil_Aragonés_Marcos_Lucas_Vaquerizo.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/~WRL0005.tmp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,36 +184,54 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.Colores.executor&quot;: &quot;Run&quot;,
     &quot;Application.CuantosPrimos2.executor&quot;: &quot;Debug&quot;,
     &quot;Application.Examen.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProgPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PruebaBuzon1.executor&quot;: &quot;Run&quot;,
     &quot;Application.SumaPrimos1.executor&quot;: &quot;Run&quot;,
     &quot;Application.SumaPrimos2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SystemTest.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ventana.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ventana6.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.java.PEC2.T5.Ej6.SumaPrimos2.executor&quot;: &quot;Run&quot;,
     &quot;Application.main.java.repasoPECT1.Ejercicio5.intento.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.main.java.sesion1.Ej9.Main.executor&quot;: &quot;Run&quot;,
     &quot;Application.main.java.sesion2.Ej2.SumaPrimos2.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Universidad/Cursos/2º 2º cuatri/Programacion_2o_cuatri/Java/src/main/java/sesion2/Ej2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Universidad/Cursos/2º 2º cuatri/Programacion_2o_cuatri/Java/src/main/java/PEC2/Repaso&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\PEC2\Repaso" />
+      <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\PEC2\T5\Ej6" />
+      <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\PEC2\T5\Ej5" />
+      <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\PEC2\T5" />
       <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\sesion2\Ej2" />
-      <recent name="D:\Universidad\Cursos\2º 2º cuatri\Programacion_2o_cuatri\Java\src\main\java\sesion1\Ej6" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Examen">
+  <component name="RunManager" selected="Application.CuantosPrimos2">
     <configuration name="CuantosPrimos2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.sesion1.Ej8.CuantosPrimos2" />
       <module name="Programacion_2o_cuatri" />
@@ -233,10 +328,34 @@
       <workItem from="1741005785818" duration="1582000" />
       <workItem from="1741088773151" duration="6948000" />
       <workItem from="1741100026121" duration="27000" />
+      <workItem from="1743764881553" duration="380000" />
+      <workItem from="1745235874945" duration="3295000" />
+      <workItem from="1745247741527" duration="1735000" />
+      <workItem from="1745251073796" duration="43000" />
+      <workItem from="1745251370204" duration="4458000" />
+      <workItem from="1745313328759" duration="8601000" />
+      <workItem from="1745338697477" duration="139000" />
+      <workItem from="1745421962238" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Java/src/main/java/PEC2/T3/Ej1/Consumidor.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/Java/src/main/java/PEC2/T5/Ej1_2/ListaThreads.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
