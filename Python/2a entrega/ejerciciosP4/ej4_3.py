@@ -53,7 +53,6 @@ def cambio(billetes: list, cantidades: list, total: int):
 ##############################
 
 def test_caso_base():
-
     v = [1, 2, 5, 10, 20, 50, 100]     #billetes
     c = [3, 3, 6, 2, 1, 0, 1]          #cantidad de cada billete
     D = 153                            #cantidad a cambiar a los billetes que se indican
@@ -65,4 +64,4 @@ def test_caso_base():
             if xi > 0:                                  #nos saltamos los billetes de los que se necesitan 0 (redundante)
                 print(f" {xi} x {vi}€")
     else:
-        print("No es posible dar el cambio.")
+        print("No es posible dar el cambio exacto.")
