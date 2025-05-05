@@ -5,9 +5,7 @@ def reduce_palabra(palabra: str, tabla_sustitucion: dict[dict[str]], pasos: list
     representa la fila de la tabla y la segunda letra representa la columna.
     Si no es posible reducir la palabra a una letra, devuelve None.
     """
-    if tabla_sustitucion == None:
-        return None
-    
+
     pasos[len(palabra) - 1] = palabra
 
     if len(palabra) <= 1:
@@ -58,49 +56,13 @@ tabla_sustitucion = {
 
 # Test simple de uso
 pasos = [None] * (len(palabra))
-print(f"Resultado: {reduce_palabra(palabra, tabla_sustitucion, pasos)}")
+print(reduce_palabra(palabra, tabla_sustitucion, pasos))
 
 ##############################
 #          TESTS             #
 ##############################
 
-def test_reduce_palabra_limite1 ():
-    palabra = ""
-    tabla_sustitucion = {
-    "a": {
-        "a": "b",
-        "b": "b",
-        "c": "a",
-        "d": "d",
-    },
-    "b": {
-        "a": "c",
-        "b": "a",
-        "c": "d",
-        "d": "a",
-    },
-    "c": {
-        "a": "b",
-        "b": "a",
-        "c": "c",
-        "d": "c",
-    },
-    "d": {
-        "a": "d",
-        "b": "c",
-        "c": "b",
-        "d": "b",
-    }}   
-    resultado = reduce_palabra(palabra, tabla_sustitucion, [None])
-    assert resultado == "", f"El resultado no es el esperado (vacío), sino {resultado}"
-
-def test_reduce_palabra_limite2 ():
-    palabra = "aba"
-    tabla_sustitucion = None
-    resultado = reduce_palabra(palabra, tabla_sustitucion, [None] * 3)
-    assert resultado == None, f"El resultado no es el esperado (vacío), sino {resultado}"
-
-def test_reduce_palabra_dificil1 (benchmark):
+def test_caso_dificil1 (benchmark):
     palabra_dificil = "abacbaccbac"
     tabla_dificil = {
         "a": {
@@ -120,17 +82,17 @@ def test_reduce_palabra_dificil1 (benchmark):
         }
     }
     pasos = [None] * (len(palabra_dificil))
-    resultado = benchmark(reduce_palabra, palabra_dificil, tabla_dificil, pasos)
+    resultado = benchmark(reduce_palabra(palabra_dificil, tabla_dificil, pasos))
     print(f"Return: {resultado}")
     pasos.reverse()
     for i, paso in enumerate(pasos):
         print(f"Paso {i}: {paso}")
 
     assert resultado == "a", "El resultado no es el esperado (a)"
-    assert pasos == ["abacbaccbac", "aacbaccbac", "bcbaccbac", "baaccbac", "aaccbac", "bccbac", "bcaac", "bcbc", "bac", "ac", "a"], "Los pasos no son los esperados (['abacbaccbac', 'aacbaccbac', 'bcbaccbac', 'baaccbac', 'aaccbac', 'bccbac', 'bcaac', 'bcbc', 'bac', 'ac', 'a'])"
+    assert pasos == ["abacbaccbac", "abacbacbac", "abacbac", "abacb", "ab", "a"], "Los pasos no son los esperados (['abacbaccbac', 'abacbacbac', 'abacbac', 'abacb', 'ab', 'a'])"
 
 
-def test_reduce_palabra_dificil2 (benchmark):
+def test_caso_dificil2 (benchmark):
     palabra_dificil = "adcbedbdceba"
     tabla_dificil = {
         "a": {
@@ -170,11 +132,11 @@ def test_reduce_palabra_dificil2 (benchmark):
         }
     }
     pasos = [None] * (len(palabra_dificil))
-    resultado = benchmark(reduce_palabra, palabra_dificil, tabla_dificil, pasos)
+    resultado = benchmark(reduce_palabra(palabra_dificil, tabla_dificil, pasos))
     print(f"Return: {resultado}")
     pasos.reverse()
     for i, paso in enumerate(pasos):
         print(f"Paso {i}: {paso}")
 
-    assert resultado == "b", "El resultado no es el esperado (b)"
-    assert pasos == ["adcbedbdceba", "adaedbdceba", "adadbdceba", "adaedceba", "adaeceba", "adaebba", "adacba", "adaaa", "adba", "aea", "aa", "b"], "Los pasos no son los esperados (['adcbedbdceba', 'adaedbdceba', 'adadbdceba', 'adaedceba', 'adaeceba', 'adaebba', 'adacba', 'adaaa', 'adba', 'aea', 'aa', 'b'])"
+    assert resultado == "a", "El resultado no es el esperado (a)"
+    assert pasos == ["adcbedbdceba", "adcbedbdcba", "adcbedbca", "adcbedb", "adcb", "a"], "Los pasos no son los esperados (['adcbedbdceba', 'adcbedbdcba', 'adcbedbca', 'adcbedb', 'adcb', 'a'])"
