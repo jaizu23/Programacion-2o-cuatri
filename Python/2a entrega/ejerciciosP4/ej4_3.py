@@ -1,10 +1,14 @@
 from math import inf
+import random
 
 def cambio(billetes: list, cantidades: list, total: int):
     """
     Calcula si es posible devolver el cambio exacto para el total especificado.
     Si es posible devuelve el número de billetes de cada tipo necesarios para este fin.
     """
+    if len(billetes) == 0 or len(cantidades) == 0 or len(billetes) != len(cantidades) or total < 0:
+        return False, 0, []
+
     aux = len(billetes)
 
     matriz_billetes = [[inf] * (total + 1) for i in range(aux+1)]
@@ -47,20 +51,59 @@ def cambio(billetes: list, cantidades: list, total: int):
                                                       #En la variable x guardamos los billetes necesarios.
 
 
+#ejemplo sencillo de uso:
+
+v = [1, 5, 10, 20, 50, 100]
+c = [2, 0, 2, 1, 3, 1]
+D = 182
+posible, total, x = cambio(v, c, D)
+if posible:
+    print(f"Para pagar {D}€ se usan {total} billetes:")
+    for vi, xi in zip(v, x):                        #usamos zip() para emparejar los elementos de las listas de billetes y cantidades y así poder tener la catidad de cada billete que se necesita.
+        if xi > 0:                                  #nos saltamos los billetes de los que se necesitan 0 (redundante)
+            print(f" {xi} x {vi}€")
+else:
+    print("No es posible dar el cambio exacto.")
+
 ##############################
 #          TESTS             #
 ##############################
 
-def test_caso_base():
-    v = [1, 2, 5, 10, 20, 50, 100]     #billetes
-    c = [3, 3, 6, 2, 1, 0, 1]          #cantidad de cada billete
-    D = 153                            #cantidad a cambiar a los billetes que se indican
+def test_caso_limite():
+    v = []     
+    c = []          
+    D = 153                            
 
-    posible, total, x = cambio(v, c, D)
-    if posible:
-        print(f"Para pagar {D}€ se usan {total} billetes:")
-        for vi, xi in zip(v, x):                        #usamos zip() para emparejar los elementos de las listas de billetes y cantidades y así poder tener la catidad de cada billete que se necesita.
-            if xi > 0:                                  #nos saltamos los billetes de los que se necesitan 0 (redundante)
-                print(f" {xi} x {vi}€")
-    else:
-        print("No es posible dar el cambio exacto.")
+    es_posible, cantidad, cantidades = cambio(v, c, D)
+    assert (es_posible, cantidad, cantidades) == (False, 0, [])
+
+def test_caso_limite3(benchmark):
+    n = 500
+    valor_max = 1000
+    random.seed(13)
+    v = sorted([random.randint(0, valor_max) for _ in range(n)])
+    print(v)
+    random.seed(23)
+    c = [random.randint(0, 20) for _ in range(n)]
+    print(c)
+    D = 5433
+    solucion = benchmark(cambio, v, c, D)
+    assert solucion ==  (True, 6, [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 5, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                   0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
