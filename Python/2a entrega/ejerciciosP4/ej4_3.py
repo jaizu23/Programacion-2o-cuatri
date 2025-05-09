@@ -1,7 +1,11 @@
 from math import inf
 
 def cambio(billetes: list, cantidades: list, total: int):
-
+    """
+    Calcula si es posible devolver el cambio exacto para el total especificado.
+    Si es posible devuelve el número de billetes de cada tipo necesarios para este fin.
+    """
+    
     aux = len(billetes)
 
     matriz_billetes = [[inf] * (total + 1) for i in range(aux+1)]
