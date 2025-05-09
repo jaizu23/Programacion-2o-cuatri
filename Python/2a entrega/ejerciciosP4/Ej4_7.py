@@ -1,6 +1,5 @@
 import random
 
-
 def encontrar_subsecuencia_maxima (A: list[int], B: list[int]) -> tuple[int, list[int]]:
     """
     Encuentra la subsecuencia de mayor longitud común a las dos secuencias A,B.

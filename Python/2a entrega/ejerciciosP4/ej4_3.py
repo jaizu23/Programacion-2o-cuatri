@@ -5,7 +5,6 @@ def cambio(billetes: list, cantidades: list, total: int):
     Calcula si es posible devolver el cambio exacto para el total especificado.
     Si es posible devuelve el número de billetes de cada tipo necesarios para este fin.
     """
-    
     aux = len(billetes)
 
     matriz_billetes = [[inf] * (total + 1) for i in range(aux+1)]
@@ -65,4 +64,3 @@ def test_caso_base():
                 print(f" {xi} x {vi}€")
     else:
         print("No es posible dar el cambio exacto.")
-test_caso_base()
