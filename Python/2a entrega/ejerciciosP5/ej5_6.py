@@ -63,7 +63,7 @@ tabla_sustitucion = {
     }
 }   
 
-# Test simple de uso
+# Prueba simple de uso
 pasos = []
 print(f"Resultado: {reduce_palabra(palabra, tabla_sustitucion, pasos)}")
 

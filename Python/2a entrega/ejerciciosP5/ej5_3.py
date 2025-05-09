@@ -16,6 +16,7 @@ def numeros_posibles (numero: str, cifras: int) -> set[str]:
 
     return resultado
 
+# Prueba simple de uso
 numero = "115124"
 cifras = 4
 print(numeros_posibles(numero, cifras))
