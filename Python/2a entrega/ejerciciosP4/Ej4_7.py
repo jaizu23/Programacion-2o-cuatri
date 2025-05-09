@@ -35,8 +35,8 @@ def encontrar_subsecuencia_maxima (A: list[int], B: list[int]) -> tuple[int, lis
     return longitud, subsecuencia
 
 # Prueba simple de uso
-A = [0,1,1,0,1,0,1,0]
-B = [1,0,1,0,0,1,0,0,1]
+A = [1,0,0,0,1,1,1,0,1,0,1,1,0]
+B = [1,1,1,0,1,1,0,0,1,1,1,0,1,0,1]
 print(encontrar_subsecuencia_maxima(A, B))
 
 ##############################
@@ -55,8 +55,17 @@ def test_caso_limite2():
     solucion = encontrar_subsecuencia_maxima(A, B)
     assert solucion == (0, [])
 
+random.seed(13)
+
 def test_caso_limite3(benchmark):
-    A = [random.randint(1, 0) for _ in range (100000)]
-    B = [random.randint(1, 0) for _ in range (100000)]
+    random.seed(13)
+    A = [random.randint(0, 1) for _ in range (100000)]
+    random.seed(23)
+    B = [random.randint(0, 1) for _ in range (100000)]
     solucion = benchmark(encontrar_subsecuencia_maxima, A[:100], B[100:200])
-    assert solucion == encontrar_subsecuencia_maxima(A[:1000], B[1000:2000])
+    assert solucion == (90, [0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 
+                             1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 
+                             1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 
+                             1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 
+                             0, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 
+                             1, 1, 1, 0, 1])
