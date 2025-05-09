@@ -51,8 +51,7 @@ def cambio(billetes: list, cantidades: list, total: int):
                                                       #En la variable x guardamos los billetes necesarios.
 
 
-#ejemplo sencillo de uso:
-
+# Prueba simple de uso:
 v = [1, 5, 10, 20, 50, 100]
 c = [2, 0, 2, 1, 3, 1]
 D = 182
