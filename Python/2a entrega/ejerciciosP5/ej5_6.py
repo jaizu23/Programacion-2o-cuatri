@@ -1,32 +1,39 @@
 def reduce_palabra(palabra: str, tabla_sustitucion: dict[dict[str]], pasos: list[str]) -> str:
-    """
-    Reduce la palabra dada a una sola letra si es posible, sustituyendo pares de letras consecutivos
-    por el valor devuelto por la tabla de sustitución, de forma que la primera letra de cada par
-    representa la fila de la tabla y la segunda letra representa la columna.
-    Si no es posible reducir la palabra a una letra, devuelve None.
-    """
-    if tabla_sustitucion == None:
-        return None
-    
-    pasos[len(palabra) - 1] = palabra
-
-    if len(palabra) <= 1:
-        return palabra
-    
-    resultado = None
-    for i in range(len(palabra) - 1):
-        if (tabla_sustitucion.get(palabra[i]) == None):
-            continue
-        elif (tabla_sustitucion.get(palabra[i]).get(palabra[i+1]) == None):
-            continue
-
-        nueva_palabra = palabra[:i] + tabla_sustitucion.get(palabra[i]).get(palabra[i+1]) + palabra[i+2:]
+    def reduce_palabra_aux(palabra: str, tabla_sustitucion: dict[dict[str]], pasos: list[str]) -> str:
+        """
+        Reduce la palabra dada a una sola letra si es posible, sustituyendo pares de letras consecutivos
+        por el valor devuelto por la tabla de sustitución, de forma que la primera letra de cada par
+        representa la fila de la tabla y la segunda letra representa la columna.
+        Si no es posible reducir la palabra a una letra, devuelve None.
+        """
+        if tabla_sustitucion == None:
+            return None
         
-        resultado = reduce_palabra(nueva_palabra, tabla_sustitucion, pasos)
-        if resultado != None:
-            return resultado
+        pasos[len(palabra) - 1] = palabra
 
+        if len(palabra) <= 1:
+            return palabra
+        
+        resultado = None
+        for i in range(len(palabra) - 1):
+            if (tabla_sustitucion.get(palabra[i]) == None):
+                continue
+            elif (tabla_sustitucion.get(palabra[i]).get(palabra[i+1]) == None):
+                continue
+
+            nueva_palabra = palabra[:i] + tabla_sustitucion.get(palabra[i]).get(palabra[i+1]) + palabra[i+2:]
+            
+            resultado = reduce_palabra(nueva_palabra, tabla_sustitucion, pasos)
+            if resultado != None:
+                return resultado
+
+        return resultado
+    
+    pasos = [None] * len(palabra)
+    resultado = reduce_palabra_aux(palabra, tabla_sustitucion, pasos)
+    pasos.reverse()
     return resultado
+
         
 palabra = "acabada"
 tabla_sustitucion = {
@@ -56,8 +63,8 @@ tabla_sustitucion = {
     }
 }   
 
-# Test simple de uso
-pasos = [None] * (len(palabra))
+# Prueba simple de uso
+pasos = []
 print(f"Resultado: {reduce_palabra(palabra, tabla_sustitucion, pasos)}")
 
 ##############################
@@ -91,13 +98,13 @@ def test_reduce_palabra_limite1 ():
         "c": "b",
         "d": "b",
     }}   
-    resultado = reduce_palabra(palabra, tabla_sustitucion, [None])
+    resultado = reduce_palabra(palabra, tabla_sustitucion, [])
     assert resultado == "", f"El resultado no es el esperado (vacío), sino {resultado}"
 
 def test_reduce_palabra_limite2 ():
     palabra = "aba"
     tabla_sustitucion = None
-    resultado = reduce_palabra(palabra, tabla_sustitucion, [None] * 3)
+    resultado = reduce_palabra(palabra, tabla_sustitucion, [])
     assert resultado == None, f"El resultado no es el esperado (vacío), sino {resultado}"
 
 def test_reduce_palabra_dificil1 (benchmark):
@@ -119,10 +126,9 @@ def test_reduce_palabra_dificil1 (benchmark):
             "c": None,
         }
     }
-    pasos = [None] * (len(palabra_dificil))
+    pasos = []
     resultado = benchmark(reduce_palabra, palabra_dificil, tabla_dificil, pasos)
     print(f"Return: {resultado}")
-    pasos.reverse()
     for i, paso in enumerate(pasos):
         print(f"Paso {i}: {paso}")
 
@@ -169,10 +175,9 @@ def test_reduce_palabra_dificil2 (benchmark):
             "e": None,
         }
     }
-    pasos = [None] * (len(palabra_dificil))
+    pasos = []
     resultado = benchmark(reduce_palabra, palabra_dificil, tabla_dificil, pasos)
     print(f"Return: {resultado}")
-    pasos.reverse()
     for i, paso in enumerate(pasos):
         print(f"Paso {i}: {paso}")
 

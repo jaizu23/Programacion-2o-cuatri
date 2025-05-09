@@ -1,9 +1,9 @@
 import random
 
-
 def encontrar_subsecuencia_maxima (A: list[int], B: list[int]) -> tuple[int, list[int]]:
     """
-    
+    Encuentra la subsecuencia de mayor longitud común a las dos secuencias A,B.
+    Devuelve la longitud de la subsecuencia y la subsecuencia en sí.
     """
     if len(A) == 0 or len (B) == 0:
         return 0, []
@@ -39,8 +39,6 @@ A = [0,1,1,0,1,0,1,0]
 B = [1,0,1,0,0,1,0,0,1]
 print(encontrar_subsecuencia_maxima(A, B))
 
-
-
 ##############################
 #          TESTS             #
 ##############################
@@ -57,8 +55,8 @@ def test_caso_limite2():
     solucion = encontrar_subsecuencia_maxima(A, B)
     assert solucion == (0, [])
 
-def test_caso_limite3():
+def test_caso_limite3(benchmark):
     A = [random.randint(1, 0) for _ in range (100000)]
     B = [random.randint(1, 0) for _ in range (100000)]
-    solucion = encontrar_subsecuencia_maxima(A[:100], B[100:200])
+    solucion = benchmark(encontrar_subsecuencia_maxima, A[:100], B[100:200])
     assert solucion == encontrar_subsecuencia_maxima(A[:1000], B[1000:2000])
