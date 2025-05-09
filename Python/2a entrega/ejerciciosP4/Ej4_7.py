@@ -57,8 +57,8 @@ def test_caso_limite2():
     solucion = encontrar_subsecuencia_maxima(A, B)
     assert solucion == (0, [])
 
-def test_caso_limite3():
+def test_caso_limite3(benchmark):
     A = [random.randint(1, 0) for _ in range (100000)]
     B = [random.randint(1, 0) for _ in range (100000)]
-    solucion = encontrar_subsecuencia_maxima(A[:100], B[100:200])
+    solucion = benchmark(encontrar_subsecuencia_maxima, A[:100], B[100:200])
     assert solucion == encontrar_subsecuencia_maxima(A[:1000], B[1000:2000])
