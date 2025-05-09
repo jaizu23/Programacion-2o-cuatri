@@ -1,4 +1,3 @@
-
 from math import inf
 
 def cambio(billetes: list, cantidades: list, total: int):
@@ -43,9 +42,6 @@ def cambio(billetes: list, cantidades: list, total: int):
     
     return True, matriz_billetes[aux][total], x       #retornamos el valor de la matriz que nos dice la cantidad de billetes necesarios para el cambio
                                                       #En la variable x guardamos los billetes necesarios para el cambio.
-
-
-
 
 
 ##############################

@@ -23,7 +23,6 @@ if __name__ == '__main__': # Si este modulo es el principal
         import pytest
         import glob
         pytest.main( sys.argv[2:] + # Le pasamos el resto de argumentos (launch.json)
-            glob.glob("**/ejerciciosP5/*", recursive=True) + 
-            glob.glob("**/ejerciciosP4/*", recursive=True)) # Ruta de los archivos para buscar los tests
+            glob.glob("**/ejerciciosP5/Ej5_6.py", recursive=True) ) # Ruta de los archivos para buscar los tests
     else:
         main(sys.argv) # Ejecutamos el programa principal

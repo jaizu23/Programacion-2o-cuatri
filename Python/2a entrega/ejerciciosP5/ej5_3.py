@@ -18,7 +18,6 @@ def numeros_posibles (numero: str, cifras: int) -> set[str]:
 
 numero = "115124"
 cifras = 4
-
 print(numeros_posibles(numero, cifras))
 
 ##############################

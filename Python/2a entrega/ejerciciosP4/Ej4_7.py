@@ -32,3 +32,9 @@ def encontrar_subsecuencia_maxima (A: list[int], B: list[int]) -> tuple[int, lis
 A = [0,1,1,0,1,0,1,0]
 B = [1,0,1,0,0,1,0,0,1]
 print(encontrar_subsecuencia_maxima(A, B))
+
+##############################
+#          TESTS             #
+##############################
+
+def test_
