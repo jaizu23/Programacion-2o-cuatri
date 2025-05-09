@@ -35,13 +35,13 @@ def cambio(billetes: list, cantidades: list, total: int):
     x = [0]*aux
     d = total                  #lo guardamos en otra variable para no alterar el valor a retornar
 
-    for i in range(aux, 0, -1):
+    for i in range(aux, 0, -1):         #se recorre la matriz de forma inversa y se almacena la solución
         k = matriz_cantidades[i][d]
         x[i-1] = k
         d -= k * billetes[i-1]
     
     return True, matriz_billetes[aux][total], x       #retornamos el valor de la matriz que nos dice la cantidad de billetes necesarios para el cambio
-                                                      #En la variable x guardamos los billetes necesarios para el cambio.
+                                                      #En la variable x guardamos los billetes necesarios.
 
 
 ##############################
@@ -61,3 +61,4 @@ def test_caso_base():
                 print(f" {xi} x {vi}€")
     else:
         print("No es posible dar el cambio exacto.")
+test_caso_base()
