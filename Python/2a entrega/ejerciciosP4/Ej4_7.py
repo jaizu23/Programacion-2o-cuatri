@@ -43,19 +43,19 @@ print(encontrar_subsecuencia_maxima(A, B))
 #          TESTS             #
 ##############################
 
-def test_caso_limite1():
+def test_subsecuencia_caso_limite1():
     A = []
     B = []
     solucion = encontrar_subsecuencia_maxima(A, B)
     assert solucion == (0, [])
 
-def test_caso_limite2():
+def test_subsecuencia_caso_limite2():
     A = ["a"]
     B = [1, 0, 1, 0, 1, 1]
     solucion = encontrar_subsecuencia_maxima(A, B)
     assert solucion == (0, [])
 
-def test_caso_limite3(benchmark):
+def test_subsecuencia_caso_dificil(benchmark):
     random.seed(13)
     A = [random.randint(0, 1) for _ in range (100000)]
     random.seed(23)

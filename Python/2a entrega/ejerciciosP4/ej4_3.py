@@ -68,15 +68,23 @@ else:
 #          TESTS             #
 ##############################
 
-def test_caso_limite():
+def test_cambio_caso_limite1():
     v = []     
+    c = [2, 0, 2, 1, 3, 1]         
+    D = 153                            
+
+    es_posible, cantidad, cantidades = cambio(v, c, D)
+    assert (es_posible, cantidad, cantidades) == (False, 0, [])
+
+def test_cambio_caso_limite2():
+    v = [1, 5, 10, 20, 50, 100]     
     c = []          
     D = 153                            
 
     es_posible, cantidad, cantidades = cambio(v, c, D)
     assert (es_posible, cantidad, cantidades) == (False, 0, [])
 
-def test_caso_limite3(benchmark):
+def test_cambio_dificil(benchmark):
     n = 500
     valor_max = 1000
     random.seed(13)
